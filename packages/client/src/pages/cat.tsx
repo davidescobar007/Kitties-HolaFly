@@ -24,7 +24,10 @@ export default function CatProfile(): ReactElement {
         <Loader />
       ) : (
         <Motion extraClassName="flex max-w-xl">
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div
+            data-testid="CatProfile"
+            className="card w-96 bg-base-100 shadow-xl"
+          >
             <figure>
               <div className="avatar">
                 <div className="w-44 rounded-full mt-6">

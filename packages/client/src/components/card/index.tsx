@@ -18,7 +18,7 @@ export default function Card({
 }: Props): ReactElement {
   return (
     <Motion extraClassName="card w-5/6 md:w-1/4 bg-base-100 shadow-xl m-5">
-      <div>
+      <div data-testid="catCard">
         <figure className="px-5 pt-5">
           <img src={image} alt="Shoes" className="rounded-xl" />
         </figure>
