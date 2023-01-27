@@ -37,5 +37,5 @@ Need to have Docker installed in your machine
    `docker run -it --rm -p 5000:5000 -p 3000:5173 kittens`
 
 3. With image running, server and client at ports:
-   - client: **http://localhost:5173**
-   - server: **http://localhost:3000/**
+   - client: **http://localhost:3000**
+   - server: **http://localhost:5173/**
