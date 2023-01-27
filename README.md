@@ -22,11 +22,11 @@ Need to have Docker installed in your machine
 
 **If Docker is installed, jump to 'Run with Docker'**
 
-`npx lerna bootstrap --hoist` - it will install packages and dependecies for client and server at once at the main node_modules.
-`npm run lerna-clean` - it will clean node_modules for both packages and only node_modules at root of project will be left
-`npm run dev` - it will run de client and server at the same time and you will be able to serve at ports:
-client: **http://localhost:5173**
-server: **http://localhost:5000/**
+- `npx lerna bootstrap --hoist` - it will install packages and dependecies for client and server at once at the main node_modules.
+- `npm run lerna-clean` - it will clean node_modules for both packages and only node_modules at root of project will be left
+- `npm run dev` - it will run de client and server at the same time and you will be able to serve at ports:
+  - client: **http://localhost:5173**
+  - server: **http://localhost:5000/**
 
 ### Run with Docker
 
@@ -37,5 +37,5 @@ server: **http://localhost:5000/**
    `docker run -it --rm -p 5000:5000 -p 3000:5173 kittens`
 
 3. With image running, server and client at ports:
-   client: **http://localhost:5173**
-   server: **http://localhost:3000/**
+   - client: **http://localhost:5173**
+   - server: **http://localhost:3000/**
