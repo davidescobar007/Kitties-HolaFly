@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  height: 10px; /* height of horizontal scrollbar ← You're missing this */
+  width: 0; /* width of vertical scrollbar */
+}

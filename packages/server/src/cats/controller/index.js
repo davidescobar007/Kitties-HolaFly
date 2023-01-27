@@ -65,12 +65,14 @@ const cats = [
 ];
 
 module.exports.getCatList = async (res) => {
-  res.status(200).json(cats);
+  setTimeout(() => {
+    return res.status(200).json(cats);
+  }, 1900);
 };
 
 module.exports.getCat = async (req, res) => {
-  const cat = cats.find(
-    (item) => toString(req.params.catId) === toString(item.id)
-  );
-  res.status(200).json(cat);
+  const cat = cats.find((item) => req.params.catId === item.name);
+  setTimeout(() => {
+    return res.status(200).json(cat);
+  }, 1900);
 };
