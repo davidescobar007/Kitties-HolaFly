@@ -11,6 +11,7 @@ Some of the libraries and/or Tools used in this project:
 - DaisyUI
 - Eslint and Prettier
 - Framer
+- Vitest
 
 ## NOTE:
 
