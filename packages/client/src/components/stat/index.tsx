@@ -4,7 +4,7 @@ type Props = {
 };
 export default function Stat({ kittensNumber }: Props): ReactElement {
   return (
-    <div className="stats shadow">
+    <div className="stats shadow my-7">
       <div className="stat">
         <div className="stat-figure text-secondary">
           <div className="avatar online">

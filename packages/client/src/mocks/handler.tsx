@@ -43,18 +43,15 @@ export const handlers = [
     // successful response
     return res(
       ctx.status(200),
-      ctx.json(
-        {
-          id: 0,
-          name: 'Leo',
-          gender: 'male',
-          imageFileName: 'leo.jpeg',
-          description:
-            'Leo is a supercute boy who really wants his forever home for Christmas. He is quite a chilled cat and is used to people and other cats. Come and meet Leo and give him the loving home he is yearning for.',
-          age: '10 years old',
-        },
-
-      ),
+      ctx.json({
+        id: 0,
+        name: 'Leo',
+        gender: 'male',
+        imageFileName: 'leo.jpeg',
+        description:
+          'Leo is a supercute boy who really wants his forever home for Christmas. He is quite a chilled cat and is used to people and other cats. Come and meet Leo and give him the loving home he is yearning for.',
+        age: '10 years old',
+      }),
       ctx.delay(1000)
     );
   }),

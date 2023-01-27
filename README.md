@@ -38,4 +38,4 @@ Need to have Docker installed in your machine
 
 3. With image running, server and client at ports:
    - client: **http://localhost:3000**
-   - server: **http://localhost:5173/**
+   - server: **http://localhost:5000/**

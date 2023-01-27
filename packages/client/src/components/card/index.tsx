@@ -17,7 +17,7 @@ export default function Card({
   age,
 }: Props): ReactElement {
   return (
-    <Motion extraClassName="card w-5/6 md:w-1/4 bg-base-100 shadow-xl m-5">
+    <Motion extraClassName="card max-w-xs md:w-2/4 bg-base-100 shadow-xl m-5">
       <div data-testid="catCard">
         <figure className="px-5 pt-5">
           <img src={image} alt="Shoes" className="rounded-xl" />
@@ -27,7 +27,7 @@ export default function Card({
             <h2 className="card-title">{name}</h2>
             <div className="badge badge-secondary mt-1">{age}</div>
           </div>
-          <p>{description}</p>
+          <p className="card-truncate w-full text-justify">{description}</p>
           <div className="card-actions justify-end">
             <Link
               to={`/cat/profile/${name}`}

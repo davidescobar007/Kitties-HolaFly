@@ -23,7 +23,7 @@ export default function CatProfile(): ReactElement {
       {isLoading ? (
         <Loader />
       ) : (
-        <Motion extraClassName="flex max-w-xl">
+        <Motion extraClassName="flex  px-7">
           <div
             data-testid="CatProfile"
             className="card w-96 bg-base-100 shadow-xl"
@@ -43,9 +43,9 @@ export default function CatProfile(): ReactElement {
                 <div className="badge badge-secondary">{kitty.age}</div>
                 <div className="badge badge-primary">{kitty.gender}</div>
               </div>
-              <p>{kitty.description}</p>
+              <p className="text-justify mt-3">{kitty.description}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Addopt me ❤️</button>
+                <button className="btn btn-primary mt-3">Addopt me ❤️</button>
               </div>
             </div>
           </div>
